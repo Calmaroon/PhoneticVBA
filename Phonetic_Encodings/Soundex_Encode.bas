@@ -33,7 +33,7 @@ Function Soundex(strWord As String, Optional vSoundexVariant As SoundexVariant =
     
     Dim i As Long
     For i = 1 To Len(strWord)
-        If InStr(strTranscodeIn, Mid$(strWord, i, 1)) > -1 Then
+        If InStr(strTranscodeIn, Mid$(strWord, i, 1)) > 0 Then
             strEncoding = strEncoding & Mid$(strWord, i, 1)
         End If
     Next
