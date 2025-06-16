@@ -18,6 +18,7 @@ Phonetic Encoding Status:
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
 |Match Rating Approach (MRA)|Complete|
+|ParmarKumbarana|Complete|
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
 |Daitch-Mokotoff Soundex|Not Started|
