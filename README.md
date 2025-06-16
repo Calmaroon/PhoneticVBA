@@ -19,6 +19,7 @@ Phonetic Encoding Status:
 |NYSIIS|Complete|
 |Match Rating Approach (MRA)|Complete|
 |ParmarKumbarana|Complete|
+|Oxford Name Compression Algorithm (ONCA)|Complete|
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
 |Daitch-Mokotoff Soundex|Not Started|
