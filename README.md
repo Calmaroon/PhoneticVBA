@@ -17,10 +17,10 @@ Phonetic Encoding Status:
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|Match Rating Approach (MRA)|Complete|
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
 |Daitch-Mokotoff Soundex|Not Started|
-|Match Rating Approach (MRA)|Not Started|
 |Metaphone|Not Started|
 |Double Metaphone|Not Started|
 |Phonex|Not Started|
