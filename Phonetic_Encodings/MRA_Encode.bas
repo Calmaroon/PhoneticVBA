@@ -1,6 +1,7 @@
 Attribute VB_Name = "MRA_Encode"
 Option Explicit
 Function MRA(strWord As String) As String
+    'does not strip out numerics/accents/etc.
     Dim strEncoding As String
     Dim i As Long
     strWord = UCase(strWord)
