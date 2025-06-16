@@ -12,6 +12,7 @@ end sub
 Phonetic Encoding Status:
 |Encoding Name|Status|
 |-------------|------|
+|Caverphone|Complete|
 |Soundex|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
@@ -28,4 +29,4 @@ Phonetic Encoding Status:
 |Beider-Morse|Not Started|
 |Roger Root|Not Started|
 |Statistics Canada|Not Started|
-|Caverphone|Not Started|
+
