@@ -17,6 +17,7 @@ Phonetic Encoding Status:
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|Ainsworth|Complete|
 |Match Rating Approach (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
