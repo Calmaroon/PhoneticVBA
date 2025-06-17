@@ -6,6 +6,8 @@ Code Sample:
 ```
 sub EncodeExamples
   debug.print Soundex("Williams") 'Returns W452
+  debug.print NYSIIS("Williams") 'Returns WALAN
+  debug.print Ainsworth("Williams") 'Returns wɪllɪæms
 end sub
 ```
 
@@ -17,6 +19,7 @@ Phonetic Encoding Status:
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|Ainsworth|Complete|
 |Match Rating Approach (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
