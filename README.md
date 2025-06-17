@@ -6,6 +6,8 @@ Code Sample:
 ```
 sub EncodeExamples
   debug.print Soundex("Williams") 'Returns W452
+  debug.print NYSIIS("Williams") 'Returns WALAN
+  debug.print Ainsworth("Williams") 'Returns wɪllɪæms
 end sub
 ```
 
