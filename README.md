@@ -19,6 +19,7 @@ Phonetic Encoding Status:
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|Davidson's Consonant Code|Complete|
 |Ainsworth|Complete|
 |Match Rating Approach (MRA)|Complete|
 |ParmarKumbarana|Complete|
