@@ -16,6 +16,7 @@ Phonetic Encoding Status:
 |-------------|------|
 |Caverphone|Complete|
 |American Soundex|Complete|
+|Metaphone|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
@@ -28,7 +29,6 @@ Phonetic Encoding Status:
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
 |Daitch-Mokotoff Soundex|Not Started|
-|Metaphone|Not Started|
 |Double Metaphone|Not Started|
 |Phonex|Not Started|
 |FONEM|Not Started|
