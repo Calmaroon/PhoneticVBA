@@ -21,6 +21,7 @@ Phonetic Encoding Status:
 |NYSIIS|Complete|
 |Davidson's Consonant Code|Complete|
 |Ainsworth|Complete|
+|SoundD|Complete|
 |Match Rating Approach (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
