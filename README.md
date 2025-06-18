@@ -15,7 +15,7 @@ Phonetic Encoding Status:
 |Encoding Name|Status|
 |-------------|------|
 |Caverphone|Complete|
-|Soundex|Complete|
+|American Soundex|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
