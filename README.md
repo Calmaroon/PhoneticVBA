@@ -35,5 +35,10 @@ Phonetic Encoding Status:
 |Norphone|Not Started|
 |Beider-Morse|Not Started|
 |Roger Root|Not Started|
+|Refined Soundex|Not Started|
+|Fuzzy Soundex|Not Started|
+|Daitch-Mokotoff Soundex|Not Started|
+|SoundexBR|Not Started|
+|MetaSoundex|Not Started|
 |Statistics Canada|Not Started|
 
