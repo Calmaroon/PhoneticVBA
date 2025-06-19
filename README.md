@@ -29,7 +29,6 @@ Phonetic Encoding Status:
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
-|Daitch-Mokotoff Soundex|Not Started|
 |Double Metaphone|Not Started|
 |Phonex|Not Started|
 |FONEM|Not Started|
