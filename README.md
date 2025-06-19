@@ -17,6 +17,7 @@ Phonetic Encoding Status:
 |Caverphone|Complete|
 |American Soundex|Complete|
 |Daitch-Mokotoff Soundex|Complete|
+|Fuzzy Soundex|Complete|
 |Metaphone|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
@@ -36,7 +37,6 @@ Phonetic Encoding Status:
 |Beider-Morse|Not Started|
 |Roger Root|Not Started|
 |Refined Soundex|Not Started|
-|Fuzzy Soundex|Not Started|
 |SoundexBR|Not Started|
 |MetaSoundex|Not Started|
 |Statistics Canada|Not Started|
