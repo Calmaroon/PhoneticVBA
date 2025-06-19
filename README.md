@@ -16,6 +16,7 @@ Phonetic Encoding Status:
 |-------------|------|
 |Caverphone|Complete|
 |American Soundex|Complete|
+|Daitch-Mokotoff Soundex|Complete|
 |Metaphone|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
@@ -28,7 +29,6 @@ Phonetic Encoding Status:
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Robert C. Russell's Index|Not Started|
 |Refined Soundex|Not Started|
-|Daitch-Mokotoff Soundex|Not Started|
 |Double Metaphone|Not Started|
 |Phonex|Not Started|
 |FONEM|Not Started|
@@ -37,7 +37,6 @@ Phonetic Encoding Status:
 |Roger Root|Not Started|
 |Refined Soundex|Not Started|
 |Fuzzy Soundex|Not Started|
-|Daitch-Mokotoff Soundex|Not Started|
 |SoundexBR|Not Started|
 |MetaSoundex|Not Started|
 |Statistics Canada|Not Started|
