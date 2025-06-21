@@ -32,6 +32,7 @@ Phonetic Encoding Status:
 |Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
+|Phonetic Spanish|Complete|
 |Eudex|In Progress|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
@@ -53,7 +54,6 @@ Phonetic Encoding Status:
 |Reth-Schek Phonetik|Not Started|
 |Henry Early|Not Started|
 |Dolby Code|Not Started|
-|Phonetik Spanish|Not Started|
 |Spanish Metaphone|Not Started|
 |NRL English-to-phoneme|Not Started|
 |Beider-Morse Phonetic Matching|Not Started|
