@@ -34,7 +34,7 @@ Phonetic Encoding Status:
 |Double Metaphone|Not Started|
 |Refined Soundex|Not Started|
 |SoundexBR|Not Started|
-|PSHP Soundex/Viewex Coding|
+|PSHP Soundex/Viewex Coding|Not Started|
 |MetaSoundex|Not Started|
 |Norphone|Not Started|
 |Beider-Morse|Not Started|
@@ -52,6 +52,6 @@ Phonetic Encoding Status:
 |Henry Early|Not Started|
 |Dolby Code|Not Started|
 |Phonetik Spanish|Not Started|
-|Spanish Metaphone||Not Started|
+|Spanish Metaphone|Not Started|
 |NRL English-to-phoneme|Not Started|
 |Beider-Morse Phonetic Matching|Not Started|
