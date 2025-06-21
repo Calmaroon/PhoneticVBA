@@ -20,6 +20,7 @@ Phonetic Encoding Status:
 |American Soundex|Complete|
 |Daitch-Mokotoff Soundex|Complete|
 |Fuzzy Soundex|Complete|
+|Refined Soundex|Complete|
 |Metaphone|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
@@ -31,15 +32,14 @@ Phonetic Encoding Status:
 |Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
-|Eudex|In Progress|
+|Phonetic Spanish|Complete|
+|Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
-|Refined Soundex|Not Started|
 |SoundexBR|Not Started|
 |PSHP Soundex/Viewex Coding|Not Started|
 |MetaSoundex|Not Started|
 |Norphone|Not Started|
-|Beider-Morse|Not Started|
 |Roger Root|Not Started|
 |Statistics Canada|Not Started|
 |Alpha Search Inquiry System|Not Started|
@@ -53,7 +53,6 @@ Phonetic Encoding Status:
 |Reth-Schek Phonetik|Not Started|
 |Henry Early|Not Started|
 |Dolby Code|Not Started|
-|Phonetik Spanish|Not Started|
 |Spanish Metaphone|Not Started|
 |NRL English-to-phoneme|Not Started|
 |Beider-Morse Phonetic Matching|Not Started|
