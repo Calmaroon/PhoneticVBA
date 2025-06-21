@@ -40,7 +40,6 @@ Phonetic Encoding Status:
 |PSHP Soundex/Viewex Coding|Not Started|
 |MetaSoundex|Not Started|
 |Norphone|Not Started|
-|Beider-Morse|Not Started|
 |Roger Root|Not Started|
 |Statistics Canada|Not Started|
 |Alpha Search Inquiry System|Not Started|
