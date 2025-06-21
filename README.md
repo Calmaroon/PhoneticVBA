@@ -34,6 +34,7 @@ Phonetic Encoding Status:
 |Phonex|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Phonetic Spanish|Complete|
+|PHONIC|Complete|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
