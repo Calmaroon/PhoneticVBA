@@ -22,6 +22,7 @@ Phonetic Encoding Status:
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|FONEM|Complete|
 |Davidson's Consonant Code|Complete|
 |Ainsworth|Complete|
 |SoundD|Complete|
@@ -32,7 +33,6 @@ Phonetic Encoding Status:
 |Refined Soundex|Not Started|
 |Double Metaphone|Not Started|
 |Phonex|Not Started|
-|FONEM|Not Started|
 |Norphone|Not Started|
 |Beider-Morse|Not Started|
 |Roger Root|Not Started|
