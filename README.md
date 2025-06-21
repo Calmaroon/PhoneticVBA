@@ -26,18 +26,32 @@ Phonetic Encoding Status:
 |Davidson's Consonant Code|Complete|
 |Ainsworth|Complete|
 |SoundD|Complete|
-|Match Rating Approach (MRA)|Complete|
+|Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
+|Eudex|In Progress|
 |Robert C. Russell's Index|Not Started|
-|Refined Soundex|Not Started|
 |Double Metaphone|Not Started|
-|Phonex|Not Started|
+|Refined Soundex|Not Started|
+|SoundexBR|Not Started|
+|PSHP Soundex/Viewex Coding|
+|MetaSoundex|Not Started|
 |Norphone|Not Started|
 |Beider-Morse|Not Started|
 |Roger Root|Not Started|
-|Refined Soundex|Not Started|
-|SoundexBR|Not Started|
-|MetaSoundex|Not Started|
 |Statistics Canada|Not Started|
-
+|Alpha Search Inquiry System|Not Started|
+|Phonex|Not Started|
+|Phonem|Not Started|
+|Phonix|Not Started|
+|SfinxBis|Not Started|
+|phonet|Not Started|
+|Standardized Phonetic Frequency Code|Not Started|
+|Haase Phonetik|Not Started|
+|Reth-Schek Phonetik|Not Started|
+|Henry Early|Not Started|
+|Dolby Code|Not Started|
+|Phonetik Spanish|Not Started|
+|Spanish Metaphone||Not Started|
+|NRL English-to-phoneme|Not Started|
+|Beider-Morse Phonetic Matching|Not Started|
