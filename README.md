@@ -33,7 +33,7 @@ Phonetic Encoding Status:
 |ParmarKumbarana|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Phonetic Spanish|Complete|
-|Eudex|In Progress|
+|Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
 |SoundexBR|Not Started|
