@@ -31,6 +31,7 @@ Phonetic Encoding Status:
 |SoundD|Complete|
 |Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
+|Phonex|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Phonetic Spanish|Complete|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
@@ -43,11 +44,10 @@ Phonetic Encoding Status:
 |Roger Root|Not Started|
 |Statistics Canada|Not Started|
 |Alpha Search Inquiry System|Not Started|
-|Phonex|Not Started|
 |Phonem|Not Started|
 |Phonix|Not Started|
-|SfinxBis|Not Started|
 |phonet|Not Started|
+|SfinxBis|Not Started|
 |Standardized Phonetic Frequency Code|Not Started|
 |Haase Phonetik|Not Started|
 |Reth-Schek Phonetik|Not Started|
