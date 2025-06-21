@@ -2,6 +2,8 @@ Replicate Python Abydos library in VBA.
 
 This project will consist of a number of modules/classes to perform phonetic encoding, stemming and distance.
 
+Code can be used in Excel/Access UDFs.
+
 Code Sample:
 ```
 sub EncodeExamples
