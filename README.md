@@ -20,6 +20,7 @@ Phonetic Encoding Status:
 |American Soundex|Complete|
 |Daitch-Mokotoff Soundex|Complete|
 |Fuzzy Soundex|Complete|
+|Refined Soundex|Complete|
 |Metaphone|Complete|
 |Lein|Complete|
 |Koelner (Cologne)|Complete|
@@ -34,7 +35,6 @@ Phonetic Encoding Status:
 |Eudex|In Progress|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
-|Refined Soundex|Not Started|
 |SoundexBR|Not Started|
 |PSHP Soundex/Viewex Coding|Not Started|
 |MetaSoundex|Not Started|
