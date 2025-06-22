@@ -32,6 +32,7 @@ Phonetic Encoding Status:
 |Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Phonex|Complete|
+|Phonix|Complete|
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Phonetic Spanish|Complete|
 |PHONIC|Complete|
@@ -46,7 +47,6 @@ Phonetic Encoding Status:
 |Statistics Canada|Not Started|
 |Alpha Search Inquiry System|Not Started|
 |Phonem|Not Started|
-|Phonix|Not Started|
 |phonet|Not Started|
 |SfinxBis|Not Started|
 |Standardized Phonetic Frequency Code|Not Started|
