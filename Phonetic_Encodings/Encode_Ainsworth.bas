@@ -1,4 +1,4 @@
-Attribute VB_Name = "Ainsworth_Encode"
+Attribute VB_Name = "Encode_Ainsworth"
 Option Explicit
 Dim regex As New VBScript_RegExp_55.RegExp
 Dim boolSetUpComplete As Boolean
@@ -196,10 +196,10 @@ Sub SetUpRegExList()
     regexList.Add Array("z", "z", 1)
     boolSetUpComplete = True
 End Sub
-Function Ainsworth(StrWord As String) As String
+Function Ainsworth(strWord As String) As String
     If Not boolSetUpComplete Then Call SetUpRegExList
     
-    StrWord = LCase(StrWord)
+    strWord = LCase(strWord)
     Dim strPron As String
     Dim strFragment As String
     
@@ -212,9 +212,9 @@ Function Ainsworth(StrWord As String) As String
     Dim matched As Boolean
     Dim intPos As Integer
     intPos = 1
-    Do While intPos <= Len(StrWord)
+    Do While intPos <= Len(strWord)
         matched = False
-        strFragment = Mid(StrWord, intPos)
+        strFragment = Mid(strWord, intPos)
         
         For Each rule In regexList
             If UBound(rule) >= 3 Then 'if it has a lookbehind
@@ -224,9 +224,9 @@ Function Ainsworth(StrWord As String) As String
                     regex.pattern = "^" & rule(0)
                     lookBehindRegex.pattern = "^" & rule(3)
                     If (intPos - rule(4)) > 0 Then
-                         If regex.test(Mid(StrWord, intPos - rule(4))) Then
+                         If regex.test(Mid(strWord, intPos - rule(4))) Then
         
-                            If lookBehindRegex.test(Mid(StrWord, intPos - rule(4))) Then
+                            If lookBehindRegex.test(Mid(strWord, intPos - rule(4))) Then
                                 strPron = strPron & rule(1)
                                 intPos = intPos + rule(2)
                                 matched = True

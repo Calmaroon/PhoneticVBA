@@ -1,4 +1,4 @@
-Attribute VB_Name = "Metaphone_Encode"
+Attribute VB_Name = "Encode_Metaphone"
 Option Explicit
 Function Metaphone(strWord As String, Optional intMaxLength As Integer = -1) As String
     If intMaxLength <> -1 Then

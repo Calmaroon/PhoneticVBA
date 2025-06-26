@@ -1,8 +1,8 @@
-Attribute VB_Name = "Koelner_Encode"
+Attribute VB_Name = "Encode_Koelner"
 Option Explicit
 Const strVSet = "AEIOUJY"
 Function Koelner(strWord As String) As String
-    Dim strEncoding As String
+    Dim StrEncoding As String
     
 
     strWord = UCase$(strWord)
@@ -10,7 +10,7 @@ Function Koelner(strWord As String) As String
     strWord = Replace(strWord, "Ö", "OE")
     strWord = Replace(strWord, "Ü", "UE")
     
-    strWord = UnicodeFunctions.UnicodeStrip(strWord)
+    strWord = UnicodeStrip(strWord)
     
     If strWord = "" Then
         strWord = ""
@@ -22,64 +22,64 @@ Function Koelner(strWord As String) As String
     For i = 1 To Len(strWord)
         strChar = Mid(strWord, i, 1)
         If InStr(strVSet, strChar) > 0 Then
-            strEncoding = strEncoding & "0"
+            StrEncoding = StrEncoding & "0"
         ElseIf strChar = "B" Then
-            strEncoding = strEncoding & "1"
+            StrEncoding = StrEncoding & "1"
         ElseIf strChar = "P" Then
             If i + 1 < Len(strWord) And Mid(strWord, i + 1, 1) = "H" Then
-                strEncoding = strEncoding & "3"
+                StrEncoding = StrEncoding & "3"
             Else
-                strEncoding = strEncoding & "3"
+                StrEncoding = StrEncoding & "3"
             End If
         ElseIf strChar Like "[DT]" Then
             If i < Len(strWord) And Mid(strWord, i + 1, 1) Like "[CSZ]" Then
-                strEncoding = strEncoding & "8"
+                StrEncoding = StrEncoding & "8"
             Else
-                strEncoding = strEncoding & "2"
+                StrEncoding = StrEncoding & "2"
             End If
         ElseIf strChar Like "[FVW]" Then
-              strEncoding = strEncoding & "3"
+              StrEncoding = StrEncoding & "3"
         ElseIf strChar Like "[GKQ]" Then
-            strEncoding = strEncoding & "4"
+            StrEncoding = StrEncoding & "4"
         ElseIf strChar = "C" Then
             If i > 1 Then
                 If Mid(strWord, i - 1, 1) Like "[SZ]" Then
-                    strEncoding = strEncoding & "8"
+                    StrEncoding = StrEncoding & "8"
                 ElseIf i < Len(strWord) And Mid(strWord, i + 1, 1) Like "[AHKOQUX]" Then
-                    strEncoding = strEncoding & "4"
+                    StrEncoding = StrEncoding & "4"
                 Else
-                    strEncoding = strEncoding & "8"
+                    StrEncoding = StrEncoding & "8"
                 End If
             ElseIf i = 1 Then
                 If i < Len(strWord) And Mid(strWord, i + 1, 1) Like "[AHKLOQRUX]" Then
-                    strEncoding = strEncoding & "4"
+                    StrEncoding = StrEncoding & "4"
                 Else
-                    strEncoding = strEncoding & "8"
+                    StrEncoding = StrEncoding & "8"
                 End If
             End If
         ElseIf strChar = "X" Then
             If i > 1 Then
                 If Mid(strWord, i - 1, 1) Like "[CKQ]" Then
-                    strEncoding = strEncoding & "8"
+                    StrEncoding = StrEncoding & "8"
                 Else
-                    strEncoding = strEncoding & "48"
+                    StrEncoding = StrEncoding & "48"
                 End If
             Else
-                strEncoding = strEncoding & "48"
+                StrEncoding = StrEncoding & "48"
             End If
         ElseIf strChar = "L" Then
-            strEncoding = strEncoding & "5"
+            StrEncoding = StrEncoding & "5"
         ElseIf strChar Like "[MN]" Then
-            strEncoding = strEncoding & "6"
+            StrEncoding = StrEncoding & "6"
         ElseIf strChar = "R" Then
-            strEncoding = strEncoding & "7"
+            StrEncoding = StrEncoding & "7"
         ElseIf strChar Like "[SZ]" Then
-            strEncoding = strEncoding & "8"
+            StrEncoding = StrEncoding & "8"
         End If
     Next
     
-    strEncoding = PhoneticFunctions.DeleteConsecutiveRepeats(strEncoding)
-    strEncoding = Left(strEncoding, 1) & Replace(Mid(strEncoding, 2, Len(strEncoding)), "0", "")
+    StrEncoding = DeleteConsecutiveRepeats(StrEncoding)
+    StrEncoding = Left(StrEncoding, 1) & Replace(Mid(StrEncoding, 2, Len(StrEncoding)), "0", "")
     
-    Koelner = strEncoding
+    Koelner = StrEncoding
 End Function

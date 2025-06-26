@@ -1,4 +1,4 @@
-Attribute VB_Name = "Caverphone_Encode"
+Attribute VB_Name = "Encode_Caverphone"
 Option Explicit
 Const strLCaseSet = "abcdefghijklmnopqrstuvwxyz"
 Function Caverphone(strWord As String, Optional intVersion As Integer = 2) As String

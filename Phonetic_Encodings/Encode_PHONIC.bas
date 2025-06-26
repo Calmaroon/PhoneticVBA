@@ -1,4 +1,4 @@
-Attribute VB_Name = "Phonic_Encode"
+Attribute VB_Name = "Encode_PHONIC"
 Option Explicit
 Const strTranscodeIn = "DTNMRLJCKGQXFVBPSZ"
 Const strTranscodeOut = "112345677777889900"
@@ -38,7 +38,7 @@ Function PHONIC(strWord As String, Optional intMaxLength As Integer = 5, Optiona
         i = i + 1
     Wend
     
-    strCode = Replace(PhoneticFunctions.DeleteConsecutiveRepeats(strCode), ".", "")
+    strCode = Replace(DeleteConsecutiveRepeats(strCode), ".", "")
     
     If boolZeroPad Then
         strCode = strCode & String(intMaxLength, "0")

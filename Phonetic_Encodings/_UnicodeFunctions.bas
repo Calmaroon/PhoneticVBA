@@ -1,4 +1,4 @@
-Attribute VB_Name = "UnicodeFunctions"
+Attribute VB_Name = "_UnicodeFunctions"
 Public Function UnicodeStrip(inputText As String) As String
     Dim result As String
     Dim i As Integer

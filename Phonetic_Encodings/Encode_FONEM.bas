@@ -1,4 +1,4 @@
-Attribute VB_Name = "FONEM_Encode"
+Attribute VB_Name = "Encode_FONEM"
 Option Explicit
 Function FONEM(strWord As String) As String
     Dim ruleOrder As New Collection

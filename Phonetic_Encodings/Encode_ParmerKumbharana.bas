@@ -1,8 +1,8 @@
-Attribute VB_Name = "ParmerKumbharana_Encode"
+Attribute VB_Name = "Encode_ParmerKumbharana"
 Option Explicit
 Function ParmarKumbarana(strWord As String) As String
     strWord = UCase(strWord)
-    strWord = PhoneticFunctions.DeleteConsecutiveRepeats(strWord)
+    strWord = DeleteConsecutiveRepeats(strWord)
     Dim i As Long
     i = 1
     

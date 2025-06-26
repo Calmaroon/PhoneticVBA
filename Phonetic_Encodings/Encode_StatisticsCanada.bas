@@ -1,9 +1,9 @@
-Attribute VB_Name = "StatisticsCanada_Encode"
+Attribute VB_Name = "Encode_StatisticsCanada"
 Option Explicit
 Function StatisticsCanada(strWord As String, Optional intMaxLength As Integer = 4) As String
     If intMaxLength < 1 Then intMaxLength = 1
-    strWord = UnicodeFunctions.UnicodeStrip(strWord)
-    strWord = PhoneticFunctions.GetAlphaOnly(UCase$(strWord))
+    strWord = UnicodeStrip(strWord)
+    strWord = GetAlphaOnly(UCase$(strWord))
 
     If strWord = "" Then
         StatisticsCanada = ""
@@ -21,7 +21,7 @@ Function StatisticsCanada(strWord As String, Optional intMaxLength As Integer = 
     
     strCode = Left(strWord, 1) & strCode
     
-    strCode = PhoneticFunctions.DeleteConsecutiveRepeats(strCode)
+    strCode = DeleteConsecutiveRepeats(strCode)
     strCode = Replace(strCode, " ", "")
     
     StatisticsCanada = Left(strCode, intMaxLength)

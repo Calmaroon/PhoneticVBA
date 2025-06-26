@@ -1,4 +1,4 @@
-Attribute VB_Name = "FuzzySoundex_Encode"
+Attribute VB_Name = "Encode_FuzzySoundex"
 Option Explicit
 Const strTranscodeIn = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Const strTranscodeOut = "0193017-07745501769301-7-9"
@@ -12,7 +12,7 @@ Function FuzzySoundex(strWord As String, Optional intMaxLength As Integer = 5, O
     End If
     
     
-    strWord = UnicodeFunctions.UnicodeStrip(strWord)
+    strWord = UnicodeStrip(strWord)
     strWord = UCase$(strWord)
 
     Dim strWordOriginal As String
@@ -83,7 +83,7 @@ Function FuzzySoundex(strWord As String, Optional intMaxLength As Integer = 5, O
     Next
     
     strWord = Replace(strWord, "-", "")
-    strWord = PhoneticFunctions.DeleteConsecutiveRepeats(strWord)
+    strWord = DeleteConsecutiveRepeats(strWord)
     
     If Left(strWordOriginal, 1) Like "[HWY]" Then
         strWord = Left(strWordOriginal, 1) & strWord

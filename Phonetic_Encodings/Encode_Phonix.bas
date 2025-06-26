@@ -1,4 +1,4 @@
-Attribute VB_Name = "Phonix_Encode"
+Attribute VB_Name = "Encode_Phonix"
 Option Explicit
 Const strTranscodeIn = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Const strTranscodeOut = "01230720022455012683070808"
@@ -16,8 +16,8 @@ Function Phonix(strWord As String, Optional intMaxLength As Integer = 4, Optiona
         Call PhonixSetup
     End If
     
-    strWord = UnicodeFunctions.UnicodeStrip(strWord)
-    strWord = PhoneticFunctions.GetAlphaOnly(UCase$(strWord))
+    strWord = UnicodeStrip(strWord)
+    strWord = GetAlphaOnly(UCase$(strWord))
     
     Dim strSoundex As String
     Dim vTrans As Variant
@@ -41,7 +41,7 @@ Function Phonix(strWord As String, Optional intMaxLength As Integer = 4, Optiona
         strSoundex = strSoundex & Mid$(strTranscodeOut, InStr(strTranscodeIn, Mid$(strWord, i, 1)), 1)
     Next
     
-    strSoundex = PhoneticFunctions.DeleteConsecutiveRepeats(strSoundex)
+    strSoundex = DeleteConsecutiveRepeats(strSoundex)
     strSoundex = Replace$(strSoundex, "0", "")
     
     If boolZeroPad Then

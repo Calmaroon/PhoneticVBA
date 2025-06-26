@@ -1,4 +1,4 @@
-Attribute VB_Name = "DaitchMokotoff_Encode"
+Attribute VB_Name = "Encode_DaitchMokotoff"
 Option Explicit
 
 Function DaitchMokotoff(strWord As String, Optional intMaxLength As Integer = 6, Optional boolZeroPad As Boolean = True)
@@ -160,7 +160,7 @@ Function DaitchMokotoff(strWord As String, Optional intMaxLength As Integer = 6,
     dms_order.Add "Y", Array("Y")
     dms_order.Add "Z", Array("ZHDZH", "ZDZH", "ZSCH", "ZDZ", "ZHD", "ZSH", "ZD", "ZH", "ZS", "Z")
 
-    strWord = PhoneticFunctions.GetAlphaOnly(strWord)
+    strWord = GetAlphaOnly(strWord)
     strWord = UCase$(strWord)
     
     Dim sstr As Variant
@@ -224,7 +224,7 @@ Function DaitchMokotoff(strWord As String, Optional intMaxLength As Integer = 6,
     Dim tempStr As String
     Dim code As Variant
     For Each code In dms
-        tempStr = PhoneticFunctions.DeleteConsecutiveRepeats(code)
+        tempStr = DeleteConsecutiveRepeats(code)
         tempStr = Replace(tempStr, "_", "")
         If boolZeroPad Then tempStr = tempStr & String(intMaxLength, "0")
         filteredDMS.Add Left(tempStr, intMaxLength)

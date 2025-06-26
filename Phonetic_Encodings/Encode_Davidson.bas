@@ -1,4 +1,4 @@
-Attribute VB_Name = "Davidson_Encode"
+Attribute VB_Name = "Encode_Davidson"
 Option Explicit
 Function Davidson(strLName As String, Optional strFName As String = ".", Optional boolOmitFName As Boolean = False)
     Dim StrEncoding As String
@@ -11,7 +11,7 @@ Function Davidson(strLName As String, Optional strFName As String = ".", Optiona
         End If
     Next
 
-    StrEncoding = PhoneticFunctions.DeleteConsecutiveRepeats(StrEncoding)
+    StrEncoding = DeleteConsecutiveRepeats(StrEncoding)
     
     If Len(StrEncoding) < 4 Then
         StrEncoding = StrEncoding & Space(4 - Len(StrEncoding))

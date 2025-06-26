@@ -1,4 +1,4 @@
-Attribute VB_Name = "NYSIIS_Encode"
+Attribute VB_Name = "Encode_NYSIIS"
 Option Explicit
 Function NYSIIS(strWord As String, Optional intMaxLength As Integer = 6, Optional boolModified As Boolean = False) As String
     If intMaxLength < 6 Then intMaxLength = 6
@@ -83,7 +83,7 @@ Function NYSIIS(strWord As String, Optional intMaxLength As Integer = 6, Optiona
         If intSkip > 0 Then
             intSkip = intSkip - 1
             i = i + 1
-            GoTo nextChar
+            GoTo NextChar
         End If
          
         If Mid(strWordAlpha, i, 2) = "EV" Then
@@ -141,10 +141,10 @@ Function NYSIIS(strWord As String, Optional intMaxLength As Integer = 6, Optiona
             strKey = strKey & Mid(strWordAlpha, i, intSkip + 1)
         End If
         i = i + 1
-nextChar:
+NextChar:
     Loop
 
-    strKey = PhoneticFunctions.DeleteConsecutiveRepeats(strKey)
+    strKey = DeleteConsecutiveRepeats(strKey)
     
     If Right(strKey, 1) = "S" Then
         strKey = Left(strKey, Len(strKey) - 1)

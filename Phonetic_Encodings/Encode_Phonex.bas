@@ -1,10 +1,10 @@
-Attribute VB_Name = "Phonex_Encode"
+Attribute VB_Name = "Encode_Phonex"
 Option Explicit
 Function Phonex(strWord As String, Optional intMaxLength As Integer = 4, Optional boolZeroPad As Boolean = True)
     If intMaxLength < 0 Then intMaxLength = 64
     If intMaxLength = 0 Then intMaxLength = 4
     
-    strWord = UnicodeFunctions.UnicodeStrip(UCase$(strWord))
+    strWord = UnicodeStrip(UCase$(strWord))
     Dim strNameCode As String, strLast As String
     
     While Right(strWord, 1) = "S"

@@ -1,20 +1,25 @@
-Attribute VB_Name = "PhoneticFunctions"
+Attribute VB_Name = "_PhoneticFunctions"
 Option Explicit
 Function DeleteConsecutiveRepeats(ByVal strWord As String) As String
-    Dim i As Long
-    Dim strResult As String
-
     If Len(strWord) = 0 Then
-        DeleteConsecutiveRepeats = ""
+        DeleteConsecutiveRepeats = vbNullString
         Exit Function
     End If
-
+    
+    Dim i As Long
+    Dim strResult As String
+    
     strResult = Mid$(strWord, 1, 1)
     
+    Dim strChar As String
+    Dim strPrev As String
+    strPrev = Left$(strWord, 1)
     For i = 2 To Len(strWord)
-        If Mid$(strWord, i, 1) <> Mid$(strWord, i - 1, 1) Then
-            strResult = strResult & Mid$(strWord, i, 1)
+        strChar = Mid$(strWord, i, 1)
+        If strChar <> strPrev Then
+            strResult = strResult & strChar
         End If
+        strPrev = strChar
     Next i
 
     DeleteConsecutiveRepeats = strResult
