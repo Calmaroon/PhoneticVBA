@@ -16,20 +16,21 @@ end sub
 Phonetic Encoding Status:
 |Encoding Name|Status|
 |-------------|------|
-|Caverphone|Complete|
 |American Soundex|Complete|
 |Daitch-Mokotoff Soundex|Complete|
 |Fuzzy Soundex|Complete|
 |Refined Soundex|Complete|
 |Metaphone|Complete|
-|Lein|Complete|
-|Koelner (Cologne)|Complete|
 |NYSIIS|Complete|
+|Caverphone|Complete|
+|Statistics Canada|Complete|
+|Match Rating Algorithm (MRA)|Complete|
+|LEIN|Complete|
+|Koelner (Cologne)|Complete|
 |FONEM|Complete|
 |Davidson's Consonant Code|Complete|
 |Ainsworth|Complete|
 |SoundD|Complete|
-|Match Rating Algorithm (MRA)|Complete|
 |ParmarKumbarana|Complete|
 |Phonex|Complete|
 |Phonix|Complete|
@@ -44,7 +45,6 @@ Phonetic Encoding Status:
 |MetaSoundex|Not Started|
 |Norphone|Not Started|
 |Roger Root|Not Started|
-|Statistics Canada|Not Started|
 |Alpha Search Inquiry System|Not Started|
 |Phonem|Not Started|
 |phonet|Not Started|
