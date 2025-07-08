@@ -39,6 +39,7 @@ Phonetic Encoding Status:
 |Oxford Name Compression Algorithm (ONCA)|Complete|
 |Phonetic Spanish|Complete|
 |PHONIC|Complete|
+|Phonem|Complete|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
@@ -48,7 +49,6 @@ Phonetic Encoding Status:
 |Norphone|Not Started|
 |Roger Root|Not Started|
 |Alpha Search Inquiry System|Not Started|
-|Phonem|Not Started|
 |phonet|Not Started|
 |SfinxBis|Not Started|
 |Standardized Phonetic Frequency Code|Not Started|
