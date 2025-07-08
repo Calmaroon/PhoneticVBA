@@ -61,8 +61,8 @@ Phonetic Encoding Status:
 |Beider-Morse Phonetic Matching|Not Started|
 
 String Fingerprint Status:
-**|Fingerprinter Name|Status|**
-
+|Fingerprinter Name|Status|
+|-------------|------|
 
 Tokenization Status:
 |Tokenizer Name|Status|
