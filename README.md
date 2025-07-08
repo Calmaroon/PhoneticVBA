@@ -7,11 +7,11 @@ Code can be used in Excel/Access UDFs.
 Code Sample:
 ```
 sub EncodeExamples
-  debug.print Soundex("Williams") 'Returns W452
+  debug.print Soundex("Williams")        'Returns W452
   debug.print RefinedSoundex("Williams") 'Returns W783
-  debug.print NYSIIS("Williams") 'Returns WALAN
-  debug.print Caverphone("Williams") 'Returns WLMS111111
-  debug.print Ainsworth("Williams") 'Returns wɪllɪæms
+  debug.print NYSIIS("Williams")         'Returns WALAN
+  debug.print Caverphone("Williams")     'Returns WLMS111111
+  debug.print Ainsworth("Williams")      'Returns wɪllɪæms
 end sub
 ```
 
