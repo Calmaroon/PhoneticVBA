@@ -41,10 +41,10 @@ Phonetic Encoding Status:
 |PHONIC|Complete|
 |Phonem|Complete|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
+|PSHP Soundex/Viewex Coding|In Progress 1/2 Complete|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
 |SoundexBR|Not Started|
-|PSHP Soundex/Viewex Coding|Not Started|
 |MetaSoundex|Not Started|
 |Norphone|Not Started|
 |Roger Root|Not Started|
