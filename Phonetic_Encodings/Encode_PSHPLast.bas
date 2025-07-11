@@ -2,7 +2,7 @@ Attribute VB_Name = "Encode_PSHPLast"
 Option Explicit
 Const StrTransIn As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Const StrTransOut As String = "01230120022455012523010202"
-Function PSHPLast(strInput As String, Optional intMaxLength As Integer = 4, Optional boolGerman As Boolean = False) As String
+Function PSHPSoundexLast(strInput As String, Optional intMaxLength As Integer = 4, Optional boolGerman As Boolean = False) As String
     strInput = UCase(strInput)
     Dim strInputAlphaOnly As String
     Dim i As Long
@@ -28,9 +28,9 @@ Function PSHPLast(strInput As String, Optional intMaxLength As Integer = 4, Opti
     ElseIf Left(strInput, 2) Like "C[EIY]" Then
         strInput = "S" & Mid(strInput, 2)
     ElseIf Left(strInput, 3) = "CHR" Then
-        strInput = "S" & Mid(strInput, 2)
+        strInput = "K" & Mid(strInput, 2)
     ElseIf Left(strInput, 1) = "C" And Left(strInput, 2) <> "CH" Then
-        strInput = "S" & Mid(strInput, 2)
+        strInput = "K" & Mid(strInput, 2)
     End If
     
     If Left(strInput, 2) = "KN" Then
@@ -122,5 +122,5 @@ Function PSHPLast(strInput As String, Optional intMaxLength As Integer = 4, Opti
             strCode = Left(strCode, intMaxLength)
         End If
     End If
-    PSHPLast = strCode
+    PSHPSoundexLast = strCode
 End Function
