@@ -23,6 +23,7 @@ Phonetic Encoding Status:
 |Fuzzy Soundex|Complete|Abydos|
 |Refined Soundex|Complete|Abydos|
 |PSHP Soundex/Viewex Coding|Complete|Abydos|
+|SoundexBR|Not Started|Abydos|
 |Metaphone|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
@@ -46,7 +47,6 @@ Phonetic Encoding Status:
 |Norphone|In Progress||
 |Robert C. Russell's Index|Not Started||
 |Double Metaphone|Not Started||
-|SoundexBR|Not Started||
 |MetaSoundex|Not Started||
 |Roger Root|Not Started||
 |Alpha Search Inquiry System|Not Started||
