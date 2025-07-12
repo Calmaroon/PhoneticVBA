@@ -23,7 +23,7 @@ Phonetic Encoding Status:
 |Fuzzy Soundex|Complete|Abydos|
 |Refined Soundex|Complete|Abydos|
 |PSHP Soundex/Viewex Coding|Complete|Abydos|
-|SoundexBR|Not Started|Abydos|
+|SoundexBR|Complete|Abydos|
 |Metaphone|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
