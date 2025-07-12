@@ -22,6 +22,7 @@ Phonetic Encoding Status:
 |Daitch-Mokotoff Soundex|Complete|
 |Fuzzy Soundex|Complete|
 |Refined Soundex|Complete|
+|PSHP Soundex/Viewex Coding|Complete|
 |Metaphone|Complete|
 |NYSIIS|Complete|
 |Caverphone|Complete|
@@ -41,7 +42,6 @@ Phonetic Encoding Status:
 |PHONIC|Complete|
 |Phonem|Complete|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
-|PSHP Soundex/Viewex Coding|In Progress 1/2 Complete|
 |Robert C. Russell's Index|Not Started|
 |Double Metaphone|Not Started|
 |SoundexBR|Not Started|
