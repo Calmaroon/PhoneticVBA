@@ -16,49 +16,49 @@ end sub
 ```
 
 Phonetic Encoding Status:
-|Encoding Name|Status|
-|-------------|------|
-|American Soundex|Complete|
-|Daitch-Mokotoff Soundex|Complete|
-|Fuzzy Soundex|Complete|
-|Refined Soundex|Complete|
-|PSHP Soundex/Viewex Coding|Complete|
-|Metaphone|Complete|
-|NYSIIS|Complete|
-|Caverphone|Complete|
-|Statistics Canada|Complete|
-|Match Rating Algorithm (MRA)|Complete|
-|LEIN|Complete|
-|Koelner (Cologne)|Complete|
-|FONEM|Complete|
-|Davidson's Consonant Code|Complete|
-|Ainsworth|Complete|
-|SoundD|Complete|
-|ParmarKumbarana|Complete|
-|Phonex|Complete|
-|Phonix|Complete|
-|Oxford Name Compression Algorithm (ONCA)|Complete|
-|Phonetic Spanish|Complete|
-|PHONIC|Complete|
-|Phonem|Complete|
+|Encoding Name|Status|Ported From|
+|-------------|------|------------|
+|American Soundex|Complete|Abydos|
+|Daitch-Mokotoff Soundex|Complete|Abydos|
+|Fuzzy Soundex|Complete|Abydos|
+|Refined Soundex|Complete|Abydos|
+|PSHP Soundex/Viewex Coding|Complete|Abydos|
+|Metaphone|Complete|Abydos|
+|NYSIIS|Complete|Abydos|
+|Caverphone|Complete|Abydos|
+|Statistics Canada|Complete|Abydos|
+|Match Rating Algorithm (MRA)|Complete|Abydos|
+|LEIN|Complete|Abydos|
+|Koelner (Cologne)|Complete|Abydos|
+|FONEM|Complete|Abydos|
+|Davidson's Consonant Code|Complete|Abydos|
+|Ainsworth|Complete|Abydos|
+|NRL English-to-phoneme|Complete|Abydos|
+|SoundD|Complete|Abydos|
+|ParmarKumbarana|Complete|Abydos|
+|Phonex|Complete|Abydos|
+|Phonix|Complete|Abydos|
+|Oxford Name Compression Algorithm (ONCA)|Complete|Abydos|
+|Phonetic Spanish|Complete|Abydos|
+|PHONIC|Complete|Abydos|
+|Phonem|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
-|Robert C. Russell's Index|Not Started|
-|Double Metaphone|Not Started|
-|SoundexBR|Not Started|
-|MetaSoundex|Not Started|
-|Norphone|Not Started|
-|Roger Root|Not Started|
-|Alpha Search Inquiry System|Not Started|
-|phonet|Not Started|
-|SfinxBis|Not Started|
-|Standardized Phonetic Frequency Code|Not Started|
-|Haase Phonetik|Not Started|
-|Reth-Schek Phonetik|Not Started|
-|Henry Early|Not Started|
-|Dolby Code|Not Started|
-|Spanish Metaphone|Not Started|
-|NRL English-to-phoneme|Not Started|
-|Beider-Morse Phonetic Matching|Not Started|
+|Norphone|In Progress||
+|Robert C. Russell's Index|Not Started||
+|Double Metaphone|Not Started||
+|SoundexBR|Not Started||
+|MetaSoundex|Not Started||
+|Roger Root|Not Started||
+|Alpha Search Inquiry System|Not Started||
+|phonet|Not Started||
+|SfinxBis|Not Started||
+|Standardized Phonetic Frequency Code|Not Started||
+|Haase Phonetik|Not Started||
+|Reth-Schek Phonetik|Not Started||
+|Henry Early|Not Started||
+|Dolby Code|Not Started||
+|Spanish Metaphone|Not Started||
+|Beider-Morse Phonetic Matching|Not Started||
 
 String Fingerprint Status:
 |Fingerprinter Name|Status|
