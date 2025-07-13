@@ -24,6 +24,7 @@ Phonetic Encoding Status:
 |Refined Soundex|Complete|Abydos|
 |PSHP Soundex/Viewex Coding|Complete|Abydos|
 |SoundexBR|Complete|Abydos|
+|Robert C. Russell's Index|Complete|Abydos|
 |Metaphone|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
@@ -31,6 +32,7 @@ Phonetic Encoding Status:
 |Match Rating Algorithm (MRA)|Complete|Abydos|
 |LEIN|Complete|Abydos|
 |Koelner (Cologne)|Complete|Abydos|
+|Reth-Schek Phonetik|Complete|Abydos|
 |FONEM|Complete|Abydos|
 |Davidson's Consonant Code|Complete|Abydos|
 |Ainsworth|Complete|Abydos|
@@ -45,7 +47,6 @@ Phonetic Encoding Status:
 |Phonem|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Norphone|In Progress||
-|Robert C. Russell's Index|Not Started||
 |Double Metaphone|Not Started||
 |MetaSoundex|Not Started||
 |Roger Root|Not Started||
@@ -54,7 +55,6 @@ Phonetic Encoding Status:
 |SfinxBis|Not Started||
 |Standardized Phonetic Frequency Code|Not Started||
 |Haase Phonetik|Not Started||
-|Reth-Schek Phonetik|Not Started||
 |Henry Early|Not Started||
 |Dolby Code|Not Started||
 |Spanish Metaphone|Not Started||
