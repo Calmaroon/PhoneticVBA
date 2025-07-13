@@ -2,8 +2,6 @@ Attribute VB_Name = "Encode_SpanishMetaphone"
 Option Explicit
 
 Function SpanishMetaphone(strInput As String, Optional intMaxLength As Integer = 6, Optional boolModified As Boolean = False) As String
-    Dim strMetaKey As String
-    
     strInput = UCase$(strInput)
         
     If boolModified Then
@@ -12,7 +10,6 @@ Function SpanishMetaphone(strInput As String, Optional intMaxLength As Integer =
         strInput = Replace(strInput, "BS", "S")
         If left(strInput, 2) = "PS" Then strInput = Mid$(strInput, 2)
     End If
-    
     
     If InStr(strInput, "") > 0 Then strInput = Replace(strInput, "Á", "A")
     If InStr(strInput, "CH") > 0 Then strInput = Replace(strInput, "CH", "X")
@@ -27,7 +24,7 @@ Function SpanishMetaphone(strInput As String, Optional intMaxLength As Integer =
     If InStr(strInput, "B") > 0 Then strInput = Replace(strInput, "B", "V")
     If InStr(strInput, "LL") > 0 Then strInput = Replace(strInput, "LL", "Y")
     
-    
+    Dim strMetaKey As String
     Dim strChar As String
     Dim intPos As Integer
     intPos = 1
