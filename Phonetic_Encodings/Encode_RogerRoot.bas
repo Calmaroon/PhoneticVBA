@@ -92,7 +92,7 @@ Sub SetUpPatterns()
     MedPatterns.Add Array("Y", "*")
 End Sub
 Function RogerRoot(strInput As String, Optional intMaxLength As Integer = 5, Optional boolZeroPad As Boolean = True) As String
-    If MedPatterns.Count = 0 Or InitPatterns.Count = 0 Then Call SetUpPatterns
+    If MedPatterns Is Nothing Or InitPatterns Is Nothing Then Call SetUpPatterns
     strInput = UCase$(strInput)
     Dim intPos As Integer
     Dim Pattern As Variant
