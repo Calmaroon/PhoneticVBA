@@ -1,6 +1,4 @@
-Replicate Python Abydos library in VBA. 
-
-This project will consist of a number of modules/classes to perform phonetic encoding, stemming, tokenization, and distance.
+This collection of VBA modules/classes to perform phonetic encoding, stemming, tokenization, and distance.
 
 Code can be used in Excel/Access UDFs.
 
@@ -26,6 +24,7 @@ Phonetic Encoding Status:
 |SoundexBR|Complete|Abydos|
 |Robert C. Russell's Index|Complete|Abydos|
 |Metaphone|Complete|Abydos|
+|Spanish Metaphone|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
 |Statistics Canada|Complete|Abydos|
@@ -57,7 +56,6 @@ Phonetic Encoding Status:
 |Haase Phonetik|Not Started||
 |Henry Early|Not Started||
 |Dolby Code|Not Started||
-|Spanish Metaphone|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
 
 String Fingerprint Status:
