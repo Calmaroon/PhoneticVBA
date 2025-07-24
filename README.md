@@ -25,6 +25,7 @@ Phonetic Encoding Status:
 |Robert C. Russell's Index|Complete|Abydos|
 |Roger Root|Complete|Abydos|
 |Metaphone|Complete|Abydos|
+|Double Metaphone|Complete|Abydos|
 |Spanish Metaphone|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
@@ -47,7 +48,6 @@ Phonetic Encoding Status:
 |Phonem|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Norphone|In Progress||
-|Double Metaphone|Not Started||
 |MetaSoundex|Not Started||
 |Alpha Search Inquiry System|Not Started||
 |phonet|Not Started||
