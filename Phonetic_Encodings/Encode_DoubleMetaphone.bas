@@ -365,6 +365,11 @@ Function DoubleMetaphone(strWord As String, Optional intMaxLength As Integer = -
 
     Next
     
+    If intMaxLength > 0 Then
+        strPrimary = left(strPrimary, intMaxLength)
+        strSecondary = left(strSecondary, intMaxLength)
+    End If
+    
     If strPrimary = strSecondary Then strSecondary = vbNullString
     
     DoubleMetaphone = IIf(strSecondary = vbNullString, strPrimary, strPrimary & "," & strSecondary)
