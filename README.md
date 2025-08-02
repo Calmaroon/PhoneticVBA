@@ -62,8 +62,8 @@ Stemmer Status:
 |Stemmer Name|Status|Ported From|
 |-------------|------|------------|
 |Porter|Completed|Abydos|
-|Porter2|Not Started||
-|Caumanns|Not Started||
+|Caumanns|Completed|Abydos|
+|Snowball (Porter2)|Not Started||
 |Clef German|Not Started||
 |Clef German Plus|Not Started||
 |Clef Swedish|Not Started||
