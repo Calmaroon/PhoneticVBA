@@ -60,7 +60,7 @@ Phonetic Encoding Status:
 
 Stemmer Status:
 |Stemmer Name|Status|Ported From|
-|-------------|------||
+|-------------|------|------------|
 |Porter|Completed|Abydos|
 |Porter2|Not Started||
 
