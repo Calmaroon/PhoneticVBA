@@ -58,6 +58,12 @@ Phonetic Encoding Status:
 |Dolby Code|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
 
+Stemmer Status:
+|Stemmer Name|Status|Ported From|
+|-------------|------||
+|Porter|Completed|Abydos|
+|Porter2|Not Started||
+
 String Fingerprint Status:
 |Fingerprinter Name|Status|
 |-------------|------|
