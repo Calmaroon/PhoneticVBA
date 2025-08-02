@@ -58,6 +58,28 @@ Phonetic Encoding Status:
 |Dolby Code|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
 
+Stemmer Status:
+|Stemmer Name|Status|Ported From|
+|-------------|------|------------|
+|Porter|Completed|Abydos|
+|Porter2|Not Started||
+|Caumanns|Not Started||
+|Clef German|Not Started||
+|Clef German Plus|Not Started||
+|Clef Swedish|Not Started||
+|Lovins|Not Started||
+|Paice Husk|Not Started||
+|S Stemmer|Not Started||
+|Schinke|Not Started||
+|Snowball|Not Started||
+|Snowball Danish|Not Started||
+|Snowball Dutch|Not Started||
+|Snowball German|Not Started||
+|Snowball Norwegian|Not Started||
+|Snowball Swedish|Not Started||
+|UEA Lite|Not Started||
+
+
 String Fingerprint Status:
 |Fingerprinter Name|Status|
 |-------------|------|
