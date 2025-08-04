@@ -33,6 +33,7 @@ Phonetic Encoding Status:
 |Match Rating Algorithm (MRA)|Complete|Abydos|
 |LEIN|Complete|Abydos|
 |Koelner (Cologne)|Complete|Abydos|
+|Haase Phonetik|Complete|Abydos|
 |Reth-Schek Phonetik|Complete|Abydos|
 |FONEM|Complete|Abydos|
 |Davidson's Consonant Code|Complete|Abydos|
@@ -53,7 +54,6 @@ Phonetic Encoding Status:
 |phonet|Not Started||
 |SfinxBis|Not Started||
 |Standardized Phonetic Frequency Code|Not Started||
-|Haase Phonetik|Not Started||
 |Henry Early|Not Started||
 |Dolby Code|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
