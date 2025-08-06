@@ -94,17 +94,17 @@ Function Haase(strWord As String, Optional boolPrimaryOnly As Boolean = False) A
         encodedList.Add HaaseCode(curVariantsList.item(i)), HaaseCode(curVariantsList.item(i))
     Next
     
-    Dim strEncodedList() As String
-    ReDim strEncodedList(1 To encodedList.Count)
+    Dim encodedListString() As String
+    ReDim encodedListString(1 To encodedList.Count)
     
     For i = 1 To encodedList.Count
-        strEncodedList(i) = encodedList.item(i)
+        encodedListString(i) = encodedList.item(i)
     Next
     
     If UBound(encodedListString) > 1 Then
-        Haase = Join(strEncodedList, ",")
+        Haase = Join(encodedListString, ",")
     Else
-        Haase = strEncodedList(1)
+        Haase = encodedListString(1)
     End If
 End Function
 Function After(strWord As String, intPos As Integer, strLetters As String) As Boolean
