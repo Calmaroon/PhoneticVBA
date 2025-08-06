@@ -65,12 +65,12 @@ Stemmer Status:
 |Caumanns|Completed|Abydos|
 |SStemmer|Complete|Abydos|
 |Schinke|Complete|Abydos|
+|Paice Husk|Complete|Abydos|
 |Snowball (Porter2)|Not Started||
 |Clef German|Not Started||
 |Clef German Plus|Not Started||
 |Clef Swedish|Not Started||
 |Lovins|Not Started||
-|Paice Husk|Not Started||
 |Snowball Danish|Not Started||
 |Snowball Dutch|Not Started||
 |Snowball German|Not Started||
