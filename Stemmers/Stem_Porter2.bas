@@ -1,44 +1,17 @@
 Attribute VB_Name = "Stem_Porter2"
 Option Explicit
+
+Dim Doubles As Dictionary
+Dim exception1Dict As Dictionary
+Dim exception1Set As Dictionary
+Dim exception2Set As Dictionary
 Function Porter2(strWord As String, Optional boolEarlyEnglish As Boolean) As String
+    'Initialize dictionaries
+    If Doubles Is Nothing Or exception1Dict Is Nothing Or exception1Set Is Nothing Or exception2Set Is Nothing Then SetUpDictionaries
+    
     strWord = LCase(strWord)
     strWord = Replace(strWord, "’", "'") 'they appear to be the same thing...will look into specific ASC codes
-    
-    Dim Doubles As New Dictionary
-    Doubles.Add "bb", "": Doubles.Add "dd", "": Doubles.Add "ff", "": Doubles.Add "gg", "": Doubles.Add "mm", "": Doubles.Add "nn", "": Doubles.Add "pp", "": Doubles.Add "rr", "": Doubles.Add "tt", ""
-    
-    Dim exception1Dict As New Dictionary
-    exception1Dict.Add "skis", "ski"
-    exception1Dict.Add "skies", "sky"
-    exception1Dict.Add "dying", "die"
-    exception1Dict.Add "lying", "lie"
-    exception1Dict.Add "tying", "tie"
-    exception1Dict.Add "idly", "idl"
-    exception1Dict.Add "gently", "gentl"
-    exception1Dict.Add "ugly", "ugli"
-    exception1Dict.Add "early", "earli"
-    exception1Dict.Add "only", "onli"
-    exception1Dict.Add "singly", "singl"
-    
-    Dim exception1Set As New Dictionary
-    exception1Set.Add "sky", ""
-    exception1Set.Add "news", ""
-    exception1Set.Add "howe", ""
-    exception1Set.Add "atlas", ""
-    exception1Set.Add "cosmos", ""
-    exception1Set.Add "bias", ""
-    exception1Set.Add "andes", ""
-    
-    Dim exception2Set As New Dictionary
-    exception2Set.Add "inning", ""
-    exception2Set.Add "outing", ""
-    exception2Set.Add "canning", ""
-    exception2Set.Add "herring", ""
-    exception2Set.Add "earring", ""
-    exception2Set.Add "proceed", ""
-    exception2Set.Add "exceed", ""
-    exception2Set.Add "succeed", ""
-    
+        
     If exception1Dict.Exists(strWord) Then
         Porter2 = exception1Dict.item(strWord)
         Exit Function
@@ -255,6 +228,50 @@ Function Porter2(strWord As String, Optional boolEarlyEnglish As Boolean) As Str
     
     Porter2 = strWord
 End Function
+Sub SetUpDictionaries()
+    Set Doubles = New Dictionary
+        Doubles.Add "bb", ""
+        Doubles.Add "dd", ""
+        Doubles.Add "ff", ""
+        Doubles.Add "gg", ""
+        Doubles.Add "mm", ""
+        Doubles.Add "nn", ""
+        Doubles.Add "pp", ""
+        Doubles.Add "rr", ""
+        Doubles.Add "tt", ""
+    
+    Set exception1Dict = New Dictionary
+        exception1Dict.Add "skis", "ski"
+        exception1Dict.Add "skies", "sky"
+        exception1Dict.Add "dying", "die"
+        exception1Dict.Add "lying", "lie"
+        exception1Dict.Add "tying", "tie"
+        exception1Dict.Add "idly", "idl"
+        exception1Dict.Add "gently", "gentl"
+        exception1Dict.Add "ugly", "ugli"
+        exception1Dict.Add "early", "earli"
+        exception1Dict.Add "only", "onli"
+        exception1Dict.Add "singly", "singl"
+        
+    Set exception1Set = New Dictionary
+        exception1Set.Add "sky", ""
+        exception1Set.Add "news", ""
+        exception1Set.Add "howe", ""
+        exception1Set.Add "atlas", ""
+        exception1Set.Add "cosmos", ""
+        exception1Set.Add "bias", ""
+        exception1Set.Add "andes", ""
+    
+    Set exception2Set = New Dictionary
+        exception2Set.Add "inning", ""
+        exception2Set.Add "outing", ""
+        exception2Set.Add "canning", ""
+        exception2Set.Add "herring", ""
+        exception2Set.Add "earring", ""
+        exception2Set.Add "proceed", ""
+        exception2Set.Add "exceed", ""
+        exception2Set.Add "succeed", ""
+End Sub
 Function sbR1(strTerm As String, r1Prefix() As String) As Integer
     Dim boolVowelFound As Boolean
     Dim strPrefix As String
