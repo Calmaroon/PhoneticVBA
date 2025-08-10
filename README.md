@@ -47,6 +47,7 @@ Phonetic Encoding Status:
 |Phonetic Spanish|Complete|Abydos|
 |PHONIC|Complete|Abydos|
 |Phonem|Complete|Abydos|
+|Henry Early|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Norphone|In Progress||
 |MetaSoundex|Not Started||
@@ -54,7 +55,6 @@ Phonetic Encoding Status:
 |phonet|Not Started||
 |SfinxBis|Not Started||
 |Standardized Phonetic Frequency Code|Not Started||
-|Henry Early|Not Started||
 |Dolby Code|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
 
