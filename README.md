@@ -27,6 +27,7 @@ Phonetic Encoding Status:
 |Metaphone|Complete|Abydos|
 |Double Metaphone|Complete|Abydos|
 |Spanish Metaphone|Complete|Abydos|
+|MetaSoundex|Complete|Abydos|
 |NYSIIS|Complete|Abydos|
 |Caverphone|Complete|Abydos|
 |Statistics Canada|Complete|Abydos|
@@ -48,10 +49,9 @@ Phonetic Encoding Status:
 |PHONIC|Complete|Abydos|
 |Phonem|Complete|Abydos|
 |Henry Early|Complete|Abydos|
-|Dolby Code|Complete||
+|Dolby Code|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Norphone|In Progress||
-|MetaSoundex|Not Started||
 |Alpha Search Inquiry System|Not Started||
 |phonet|Not Started||
 |SfinxBis|Not Started||
