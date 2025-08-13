@@ -50,11 +50,11 @@ Phonetic Encoding Status:
 |Phonem|Complete|Abydos|
 |Henry Early|Complete|Abydos|
 |Dolby Code|Complete|Abydos|
+|SfinxBis|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
 |Norphone|In Progress||
 |Alpha Search Inquiry System|Not Started||
 |phonet|Not Started||
-|SfinxBis|Not Started||
 |Standardized Phonetic Frequency Code|Not Started||
 |Beider-Morse Phonetic Matching|Not Started||
 
