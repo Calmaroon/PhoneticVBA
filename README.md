@@ -63,9 +63,11 @@ Stemmer Status:
 |-------------|------|------------|
 |Porter|Completed|Abydos|
 |Snowball (Porter2)|Complete|Abydos|
-|Snowball Danish|Complete|Abydps|
+|Snowball Danish|Complete|Abydos|
 |Snowball Norwegian|Complete|Abydos|
 |Snowball Dutch|Complete|Abydos|
+|Snowball German|Complete|Abydos|
+|Snowball Swedish|Complete|Abydos|
 |Caumanns|Completed|Abydos|
 |SStemmer|Complete|Abydos|
 |Schinke|Complete|Abydos|
@@ -74,8 +76,6 @@ Stemmer Status:
 |Clef German Plus|Complete|Abydos|
 |Clef Swedish|Complete|Abydos|
 |Lovins|Not Started||
-|Snowball German|Not Started||
-|Snowball Swedish|Not Started||
 |UEA Lite|Not Started||
 
 String Fingerprint Status:
