@@ -68,6 +68,7 @@ Stemmer Status:
 |Snowball Dutch|Complete|Abydos|
 |Snowball German|Complete|Abydos|
 |Snowball Swedish|Complete|Abydos|
+|Snowball French|Complete|NLTK|
 |Caumanns|Completed|Abydos|
 |SStemmer|Complete|Abydos|
 |Schinke|Complete|Abydos|
