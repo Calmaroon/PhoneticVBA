@@ -51,8 +51,8 @@ Phonetic Encoding Status:
 |Henry Early|Complete|Abydos|
 |Dolby Code|Complete|Abydos|
 |SfinxBis|Complete|Abydos|
+|Norphone|Complete|Abydos|
 |Eudex|In Progress [Need to Code LargeInt --> String workaround]|
-|Norphone|In Progress||
 |Alpha Search Inquiry System|Not Started||
 |phonet|Not Started||
 |Standardized Phonetic Frequency Code|Not Started||
