@@ -1,22 +1,24 @@
 Attribute VB_Name = "Encode_SfinxBis"
 Option Explicit
+Option Compare Binary
+
 Const strTransIn As String = "BCDFGHJKLMNPQRSTVZAOUÅEIYÄÖ"
 Const strTransOut As String = "123729224551268378999999999"
 Function SfinxBis(strWord As String, Optional intMaxLength As Integer = -1) As String
     'Step 1
-    strWord = UCase(strWord)
-    strWord = Replace(strWord, "-", " ")
+    strWord = UCase$(strWord)
+    strWord = Replace$(strWord, "-", " ")
     
     'Step 2
     Dim adelstitel As Variant
-    For Each adelstitel In Array(" DE LA ", " DE LAS ", " DE LOS ", " VAN DE ", " VAN DEN ", "VAN DER ", " VON DEM ", " VON DER ", " AF ", _
-    " AV ", " DA ", " DE ", "DEL ", "DEN", " DES ", " DI ", " DO", " DON ", " DOS", " DU ", " E ", " IN ", " LA ", " LE ", " MAC ", " MC ", " VAN ", " VON ", " Y ", " S:T ")
+    For Each adelstitel In Array(" DE LA ", " DE LAS ", " DE LOS ", " VAN DE ", " VAN DEN ", " VAN DER ", " VON DEM ", " VON DER ", " AF ", _
+    " AV ", " DA ", " DE ", " DEL ", " DEN ", " DES ", " DI ", " DO ", " DON ", " DOS ", " DU ", " E ", " IN ", " LA ", " LE ", " MAC ", " MC ", " VAN ", " VON ", " Y ", " S:T ")
         If InStr(strWord, adelstitel) > 0 Then
-            strWord = Replace(strWord, adelstitel, " ")
+            strWord = Replace$(strWord, adelstitel, " ")
         End If
         
-        If Left(strWord, Len(Mid(adelstitel, 2))) = Mid(adelstitel, 2) Then
-            strWord = Trim(Mid(strWord, Len(Mid(adelstitel, 2))))
+        If Left$(strWord, Len(Mid$(adelstitel, 2))) = Mid(adelstitel, 2) Then
+            strWord = Trim(Mid$(strWord, Len(Mid(adelstitel, 2))))
         End If
     Next
     
@@ -42,7 +44,7 @@ Function SfinxBis(strWord As String, Optional intMaxLength As Integer = -1) As S
                 Mid(strOrdLista(i), t, 1) = " "
             End If
         Next
-        strOrdLista(i) = Replace(strOrdLista(i), " ", "")
+        strOrdLista(i) = Replace$(strOrdLista(i), " ", "")
     Next
     
     'step 6
@@ -58,22 +60,25 @@ Function SfinxBis(strWord As String, Optional intMaxLength As Integer = -1) As S
     
     'Step 8
     For i = 0 To UBound(strRest)
-        strRest(i) = Replace(strRest(i), "DT", "T")
-        strRest(i) = Replace(strRest(i), "X", "KS")
+        strRest(i) = Replace$(strRest(i), "DT", "T")
+        strRest(i) = Replace$(strRest(i), "X", "KS")
     Next
     
     'Step 9
     Dim vokal As Variant
     For Each vokal In Array("E", "I", "Y", "Ä", "Ö")
         For i = 0 To UBound(strRest)
-            strRest(i) = Replace(strRest(i), "C" & vokal, "8" & vokal)
+            strRest(i) = Replace$(strRest(i), "C" & vokal, "8" & vokal)
         Next
     Next
     
-    
+    Dim intCharPos As Long
     For i = 0 To UBound(strRest)
         For t = 1 To Len(strRest(i))
-            Mid(strRest(i), t, 1) = Mid(strTransOut, InStr(strTransIn, Mid(strRest(i), t, 1)), 1)
+            intCharPos = InStr(strTransIn, Mid$(strRest(i), t, 1))
+            If intCharPos > 0 Then
+                Mid$(strRest(i), t, 1) = Mid$(strTransOut, intCharPos, 1)
+            End If
         Next
     Next
     
@@ -84,40 +89,40 @@ Function SfinxBis(strWord As String, Optional intMaxLength As Integer = -1) As S
     
     'Step 11
     For i = 0 To UBound(strRest)
-        strRest(i) = Replace(strRest(i), "9", "")
+        strRest(i) = Replace$(strRest(i), "9", "")
     Next
     
     'step12
     For i = 0 To UBound(strOrdLista)
-        strOrdLista(i) = Left(strOrdLista(i), 1) & strRest(i)
+        strOrdLista(i) = Left$(strOrdLista(i), 1) & strRest(i)
     Next
     SfinxBis = Join(strOrdLista, ",")
 End Function
 Function foersvensker(strLokalOrdet As String) As String
-    strLokalOrdet = Replace(strLokalOrdet, "STIERN", "STJÄRN")
-    strLokalOrdet = Replace(strLokalOrdet, "HIE", "HJ")
-    strLokalOrdet = Replace(strLokalOrdet, "SIÖ", "SJÖ")
-    strLokalOrdet = Replace(strLokalOrdet, "SCH", "SH")
-    strLokalOrdet = Replace(strLokalOrdet, "QU", "KV")
-    strLokalOrdet = Replace(strLokalOrdet, "IO", "JO")
-    strLokalOrdet = Replace(strLokalOrdet, "PH", "F")
+    strLokalOrdet = Replace$(strLokalOrdet, "STIERN", "STJÄRN")
+    strLokalOrdet = Replace$(strLokalOrdet, "HIE", "HJ")
+    strLokalOrdet = Replace$(strLokalOrdet, "SIÖ", "SJÖ")
+    strLokalOrdet = Replace$(strLokalOrdet, "SCH", "SH")
+    strLokalOrdet = Replace$(strLokalOrdet, "QU", "KV")
+    strLokalOrdet = Replace$(strLokalOrdet, "IO", "JO")
+    strLokalOrdet = Replace$(strLokalOrdet, "PH", "F")
     
     Dim vokaler As Variant
     For Each vokaler In Array("A", "O", "U", "Å") 'harde vokaler
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "Ü", vokaler & "J")
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "Y ", vokaler & "J")
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "I", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "Ü", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "Y", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "I", vokaler & "J")
     Next
     
     For Each vokaler In Array("E", "I", "Y", "Ä", "Ö") 'mjuka vokaler
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "Ü", vokaler & "J")
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "Y ", vokaler & "J")
-        strLokalOrdet = Replace(strLokalOrdet, vokaler & "I", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "Ü", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "Y", vokaler & "J")
+        strLokalOrdet = Replace$(strLokalOrdet, vokaler & "I", vokaler & "J")
     Next
     
     If InStr(strLokalOrdet, "H") > 0 Then
         For Each vokaler In Array("B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Z")
-            strLokalOrdet = Replace(strLokalOrdet, "H" & vokaler, vokaler)
+            strLokalOrdet = Replace$(strLokalOrdet, "H" & vokaler, vokaler)
         Next
     End If
     
@@ -128,37 +133,37 @@ Function foersvensker(strLokalOrdet As String) As String
         End If
     Next
     
-    strLokalOrdet = Replace(strLokalOrdet, "Ð", "ETH")
-    strLokalOrdet = Replace(strLokalOrdet, "Þ", "TH")
+    strLokalOrdet = Replace$(strLokalOrdet, "Ð", "ETH")
+    strLokalOrdet = Replace$(strLokalOrdet, "Þ", "TH")
     
     foersvensker = strLokalOrdet
 End Function
 Function kodaFoerstaljudet(strLokalOrdet As String)
-    If Left(strLokalOrdet, 1) Like "[AOUÅEIYÄÖ]" Then
+    If Left$(strLokalOrdet, 1) Like "[AOUÅEIYÄÖ]" Then
         Mid(strLokalOrdet, 1, 1) = "$"
-    ElseIf Left(strLokalOrdet, 2) Like "[DGHL]J" Then
+    ElseIf Left$(strLokalOrdet, 2) Like "[DGHL]J" Then
         strLokalOrdet = "J" & Mid(strLokalOrdet, 3)
-    ElseIf Left(strLokalOrdet, 1) = "G" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then
+    ElseIf Left$(strLokalOrdet, 1) = "G" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then
         strLokalOrdet = "J" & Mid(strLokalOrdet, 2)
-    ElseIf Left(strLokalOrdet, 1) = "Q" Then
+    ElseIf Left$(strLokalOrdet, 1) = "Q" Then
         Mid(strLokalOrdet, 1, 1) = "K"
-    ElseIf Left(strLokalOrdet, 2) = "CH" And Mid(strLokalOrdet, 3, 1) Like "[AOUÅEIYÄÖ]" Then
+    ElseIf Left$(strLokalOrdet, 2) = "CH" And Mid(strLokalOrdet, 3, 1) Like "[AOUÅEIYÄÖ]" Then
         strLokalOrdet = "#" & Mid(strLokalOrdet, 3)
-    ElseIf Left(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[AOUÅ]" Then
+    ElseIf Left$(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[AOUÅ]" Then
         strLokalOrdet = "K" & Mid(strLokalOrdet, 2)
-    ElseIf Left(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[BCDFGHJKLMNPQRSTVWXZ]" Then
+    ElseIf Left$(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[BCDFGHJKLMNPQRSTVWXZ]" Then
         strLokalOrdet = "K" & Mid(strLokalOrdet, 2)
-    ElseIf Left(strLokalOrdet, 1) = "X" Then
+    ElseIf Left$(strLokalOrdet, 1) = "X" Then
         strLokalOrdet = "S" & Mid(strLokalOrdet, 2)
-    ElseIf Left(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then
+    ElseIf Left$(strLokalOrdet, 1) = "C" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then
         strLokalOrdet = "S" & Mid(strLokalOrdet, 2)
-    ElseIf Left(strLokalOrdet, 3) = "SKJ" Or Left(strLokalOrdet, 3) = "STJ" Or Left(strLokalOrdet, 3) = "SCH" Then
+    ElseIf Left$(strLokalOrdet, 3) = "SKJ" Or Left$(strLokalOrdet, 3) = "STJ" Or Left$(strLokalOrdet, 3) = "SCH" Then
         strLokalOrdet = "#" & Mid(strLokalOrdet, 4)
-    ElseIf Left(strLokalOrdet, 2) = "SH" Or Left(strLokalOrdet, 2) Like "[KTS]J" Then
+    ElseIf Left$(strLokalOrdet, 2) = "SH" Or Left$(strLokalOrdet, 2) Like "[KTS]J" Then
         strLokalOrdet = "#" & Mid(strLokalOrdet, 3)
-    ElseIf Left(strLokalOrdet, 2) = "SK" And Mid(strLokalOrdet, 3, 1) Like "[EIYÄÖ]" Then 'mjuka
+    ElseIf Left$(strLokalOrdet, 2) = "SK" And Mid(strLokalOrdet, 3, 1) Like "[EIYÄÖ]" Then 'mjuka
         strLokalOrdet = "#" & Mid(strLokalOrdet, 3)
-    ElseIf Left(strLokalOrdet, 1) = "K" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then 'mjuka
+    ElseIf Left$(strLokalOrdet, 1) = "K" And Mid(strLokalOrdet, 2, 1) Like "[EIYÄÖ]" Then 'mjuka
         strLokalOrdet = "#" & Mid(strLokalOrdet, 2)
     End If
     kodaFoerstaljudet = strLokalOrdet
