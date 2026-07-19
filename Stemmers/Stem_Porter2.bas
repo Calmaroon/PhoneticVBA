@@ -228,7 +228,7 @@ Function Porter2(strWord As String, Optional boolEarlyEnglish As Boolean) As Str
     
     Porter2 = strWord
 End Function
-Sub SetUpDictionaries()
+Private Sub SetUpDictionaries()
     Set Doubles = New Dictionary
         Doubles.Add "bb", ""
         Doubles.Add "dd", ""
@@ -272,7 +272,7 @@ Sub SetUpDictionaries()
         exception2Set.Add "exceed", ""
         exception2Set.Add "succeed", ""
 End Sub
-Function sbR1(strTerm As String, r1Prefix() As String) As Integer
+Private Function sbR1(strTerm As String, r1Prefix() As String) As Integer
     Dim boolVowelFound As Boolean
     Dim strPrefix As String
     Dim i As Integer
@@ -296,14 +296,14 @@ Function sbR1(strTerm As String, r1Prefix() As String) As Integer
          
     sbR1 = Len(strTerm)
 End Function
-Function sbR2(strTerm As String, ByRef r1Prefix() As String) As Integer
+Private Function sbR2(strTerm As String, ByRef r1Prefix() As String) As Integer
     Dim r1Start As Integer
     r1Start = sbR1(strTerm, r1Prefix())
     Dim r2Prefix() As String
     ReDim r2Prefix(0)
     sbR2 = r1Start + sbR1(Mid$(strTerm, r1Start + 1), r2Prefix)
 End Function
-Function endsInShortSyllable(strTerm As String) As Boolean
+Private Function endsInShortSyllable(strTerm As String) As Boolean
     If strTerm = "" Then
         endsInShortSyllable = False
         Exit Function
@@ -323,13 +323,13 @@ Function endsInShortSyllable(strTerm As String) As Boolean
     
     endsInShortSyllable = False
 End Function
-Function sbShortWord(strTerm As String, r1Prefix() As String) As Boolean
+Private Function sbShortWord(strTerm As String, r1Prefix() As String) As Boolean
     If sbR1(strTerm, r1Prefix()) = Len(strTerm) And endsInShortSyllable(strTerm) Then
         sbShortWord = True
         Exit Function
     End If
     sbShortWord = False
 End Function
-Function sbHasVowel(strTerm As String) As Boolean
+Private Function sbHasVowel(strTerm As String) As Boolean
     sbHasVowel = strTerm Like "*[aeiouy]*"
 End Function
