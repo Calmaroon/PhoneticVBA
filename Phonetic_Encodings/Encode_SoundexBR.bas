@@ -4,33 +4,26 @@ Const strTransIn As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Const strTransOut As String = "01230120022455012623010202"
 Function SoundexBR(strInput As String, Optional intMaxLength As Integer = 4, Optional boolZeroPad As Boolean = True) As String
     strInput = UCase$(strInput)
-    Dim i As Long
-
-    For i = 1 To Len(strInput)
-        If AscW(Mid$(strInput, i, 1)) >= 192 And AscW(Mid$(strInput, i, 1)) <= 383 Then 'Check if the first char has an accent
-            strInput = UnicodeStrip(strInput)
-            Exit For
-        End If
-    Next
-
+    strInput = GetAlphaOnly(strInput)
     Dim strSoundex As String
-    If left$(strInput, 2) = "WA" Then
+    If Left$(strInput, 2) = "WA" Then
         strSoundex = "V"
-    ElseIf left$(strInput, 1) = "K" And Mid$(strInput, 2, 1) Like "[AOU]" Then
+    ElseIf Left$(strInput, 1) = "K" And Mid$(strInput, 2, 1) Like "[AOU]" Then
         strSoundex = "C"
-    ElseIf left$(strInput, 1) = "C" And Mid$(strInput, 2, 1) Like "[EI]" Then
+    ElseIf Left$(strInput, 1) = "C" And Mid$(strInput, 2, 1) Like "[EI]" Then
         strSoundex = "S"
-    ElseIf left$(strInput, 1) = "G" And Mid$(strInput, 2, 1) Like "[EI]" Then
+    ElseIf Left$(strInput, 1) = "G" And Mid$(strInput, 2, 1) Like "[EI]" Then
         strSoundex = "H"
-    ElseIf left$(strInput, 1) = "Y" Then
+    ElseIf Left$(strInput, 1) = "Y" Then
         strSoundex = "I"
-    ElseIf left$(strInput, 1) = "H" Then
+    ElseIf Left$(strInput, 1) = "H" Then
         strSoundex = Mid$(strInput, 2, 1)
-        strInput = Mid$(strInput, 1)
+        strInput = Mid$(strInput, 2)
     Else
-        strSoundex = left$(strInput, 1)
+        strSoundex = Left$(strInput, 1)
     End If
     
+    Dim i As Long
     For i = 2 To Len(strInput)
         strSoundex = strSoundex & Mid$(strTransOut, InStr(strTransIn, Mid$(strInput, i, 1)), 1)
     Next
@@ -38,7 +31,9 @@ Function SoundexBR(strInput As String, Optional intMaxLength As Integer = 4, Opt
     strSoundex = DeleteConsecutiveRepeats(strSoundex)
     strSoundex = Replace$(strSoundex, "0", "")
     
-    If boolZeroPad Then strSoundex = strSoundex & String(intMaxLength, "0")
+    If boolZeroPad Then
+        strSoundex = strSoundex & String(intMaxLength, "0")
+    End If
     
-    SoundexBR = left$(strSoundex, intMaxLength)
+    SoundexBR = Left$(strSoundex, intMaxLength)
 End Function
